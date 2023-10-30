@@ -145,7 +145,7 @@ export default function InfoCards(props: InfoCardsProps) {
                         {data.data.forecast.daily.uvi && (
                             <div className="flex flex-col gap-2 mb-10">
                                 <h1 className="tituloPagina font-[Quantify]">Previsão UVI</h1>
-                                <div className="flex flex-row gap-2">
+                                <div className="flex flex-col lg:flex-row gap-2 ">
                                     {data.data.forecast.daily.pm25.map((element: any, key: any) => {
                                         return (
                                             <div key={key} className="cardRegion p-2">
